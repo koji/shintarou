@@ -1,7 +1,7 @@
 {
   "name": "only-layout",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
     "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
-    "commit": "cz"
+    "cz": "git-cz"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -27,17 +27,26 @@
     "eslint": "^8.34.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "git-cz": "^4.9.0",
     "husky": "^8.0.3",
     "prettier": "^2.8.4",
     "react-hooks": "^1.0.1",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "layout"
+  ],
   "author": "koji",
   "bugs": {
     "url": "https://github.com/koji/only-layout/issues"
   },
   "homepage": "https://github.com/koji/only-layout#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
