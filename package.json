@@ -9,8 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
-    "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
-    "cz": "git-cz"
+    "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -43,10 +42,5 @@
     "url": "https://github.com/koji/only-layout/issues"
   },
   "homepage": "https://github.com/koji/only-layout#readme",
-  "license": "MIT",
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  }
+  "license": "MIT"
 }
