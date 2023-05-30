@@ -11,7 +11,10 @@
     "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
     "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
     "cz": "git-cz",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "test": "vitest",
+    "testrun": "vitest run",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "lodash": "^4.17.21",
@@ -27,6 +30,8 @@
     "@storybook/addon-links": "^6.5.16",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@types/lodash": "^4.14.191",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
@@ -34,19 +39,23 @@
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
     "@vitejs/plugin-react": "^4.0.0",
+    "babel-loader": "^8.3.0",
     "eslint": "^8.34.0",
+    "eslint-plugin-jest-dom": "^4.0.3",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-testing-library": "^5.11.0",
     "git-cz": "^4.9.0",
     "husky": "^8.0.3",
-    "babel-loader": "^8.3.0",
+    "jsdom": "^22.1.0",
     "json": "^11.0.0",
     "prettier": "^2.8.4",
-    "storybook": "6.5.16",
     "react-hooks": "^1.0.1",
+    "storybook": "6.5.16",
     "typescript": "^5.0.4",
     "vite": "^4.1.0",
-    "vite-plugin-dts": "^2.0.2"
+    "vite-plugin-dts": "^2.0.2",
+    "vitest": "^0.31.1"
   },
   "peerDependencies": {
     "lodash": "^4.17.0",
