@@ -27,9 +27,9 @@ Flex.args = {
   ],
   flexDirection: DIRECTION_COLUMN,
   justifyContent: JUSTIFY_SPACE_AROUND,
-  backgroundColor: 'grey',
+  backgroundColor: '#d0d0d0',
   border: '1px solid black',
-  padding: '1rem',
+  padding: '2rem',
   maxWidth: '20rem',
   height: '10rem',
 }

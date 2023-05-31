@@ -13,9 +13,14 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./types",
+    "jsx": "react-jsx",
+    "types": ["vitest/globals"]
   },
-  "include": ["src"],
+  // "include": ["vite-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["src/lib", "**/*.ts", "**/*.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
