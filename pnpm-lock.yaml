@@ -54,6 +54,9 @@ devDependencies:
   '@types/styled-components':
     specifier: ^5.1.26
     version: 5.1.26
+  '@types/testing-library__jest-dom':
+    specifier: ^5.14.6
+    version: 5.14.6
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.52.0
     version: 5.52.0(@typescript-eslint/parser@5.52.0)(eslint@8.34.0)(typescript@5.0.4)

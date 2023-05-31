@@ -36,6 +36,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/styled-components": "^5.1.26",
+    "@types/testing-library__jest-dom": "^5.14.6",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
     "@vitejs/plugin-react": "^4.0.0",
@@ -81,8 +82,8 @@
   ],
   "author": "koji",
   "bugs": {
-    "url": "https://github.com/koji/shin/issues"
+    "url": "https://github.com/koji/shintarou/issues"
   },
-  "homepage": "https://github.com/koji/only-layout#readme",
+  "homepage": "https://github.com/koji/shintarou",
   "license": "MIT"
 }

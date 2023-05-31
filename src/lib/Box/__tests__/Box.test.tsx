@@ -12,6 +12,5 @@ describe('Box', async () => {
     expect(box).toHaveStyle('background-color: #fff')
     expect(box).toHaveStyle('padding: 2rem')
     expect(box.innerHTML).toEqual('test')
-    // expect(box?.style.backgroundColor).toEqual('red')
   })
 })
