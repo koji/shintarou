@@ -60,7 +60,7 @@
     "typescript": "^5.0.4",
     "vite": "^4.1.0",
     "vite-plugin-dts": "^2.0.2",
-    "vitest": "^0.31.1"
+    "vitest": "^0.32.0"
   },
   "peerDependencies": {
     "lodash": "^4.17.0",
