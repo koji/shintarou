@@ -5861,9 +5861,9 @@ escodegen@^2.0.0:
     source-map "~0.6.1"
 
 eslint-plugin-jest-dom@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-5.0.0.tgz#156c37914e956e581406acc77bab57573a81fad6"
-  integrity sha512-JyRZdZBM4rchaC3qZZhgNhC2DY+iCMJ8cYu8GkFczfB1Je+KMdzlegGRoGXKYR/Najd/m6gdChIOWQ+MBaKfJg==
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-5.0.1.tgz#48a0bec664665f206535c87a70d063a05e4189da"
+  integrity sha512-zD/BjNk12R5R9cxIu8oa2HfNeDSknI3ewtN8nygIUMQuieWDnTY9Np//6a1Z3G7Y3dx3l45hCUR4EphsgRmUtA==
   dependencies:
     "@babel/runtime" "^7.16.3"
     requireindex "^1.2.0"
