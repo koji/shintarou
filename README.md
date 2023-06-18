@@ -27,9 +27,12 @@ interface MyFirstBoxProps {
   backgroundColor: string
 }
 
-export MyFirstBox({ title, backgroundColor}: MyFirstBoxProps): JEX.Element {
+export function MyFirstBox({ title, backgroundColor}: MyFirstBoxProps): JSX.Element {
   return (
     <Box backgroundColor={backgroundColor} width="20rem" height="20rem">{title}</Box>
   )
 }
 ```
+
+codesandbox
+https://codesandbox.io/p/sandbox/serene-robinson-8s737k?file=%2Fsrc%2FApp.tsx%3A12%2C62
