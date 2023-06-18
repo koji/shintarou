@@ -34,7 +34,7 @@ export function MyFirstBox({ title, backgroundColor}: MyFirstBoxProps): JSX.Elem
 }
 ```
 
-`codesandbox`
+`codesandbox`  
 https://codesandbox.io/p/sandbox/shintarou-box-8s737k
 
 
@@ -62,5 +62,5 @@ export function MyFirstFlex({ direction }: MyFirstFlex): JSX.Element {
 }
 ```
 
-`codesandbox`
+`codesandbox`  
 https://codesandbox.io/p/sandbox/shintarou-flex-5jdj4k
