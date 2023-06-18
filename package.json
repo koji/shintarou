@@ -12,12 +12,13 @@
     "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
     "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
     "cz": "git-cz",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
     "test": "vitest",
     "testrun": "vitest run",
     "coverage": "vitest run --coverage",
-    "chromatic": "npx chromatic --project-token=chpt_48fb5798dad681c"
+    "predeploy": "build-storybook",
+    "deploy": "gh-pages -d storybook-static"
   },
   "engines": {
     "node": "^16.9.0 || ^17 || ^18"
@@ -53,6 +54,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-testing-library": "^5.11.0",
+    "gh-pages": "^5.0.0",
     "git-cz": "^4.9.0",
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
