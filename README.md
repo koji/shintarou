@@ -34,5 +34,33 @@ export function MyFirstBox({ title, backgroundColor}: MyFirstBoxProps): JSX.Elem
 }
 ```
 
-codesandbox
-https://codesandbox.io/p/sandbox/serene-robinson-8s737k?file=%2Fsrc%2FApp.tsx%3A12%2C62
+`codesandbox`
+https://codesandbox.io/p/sandbox/shintarou-box-8s737k
+
+
+### Flex
+`Flex` is `div` with flex box.
+
+```ts
+import { Box, DIRECTION_COLUMN, DIRECTION_ROW, Flex } from "shintarou";
+
+interface MyFirstFlex {
+  direction: string;
+}
+
+export function MyFirstFlex({ direction }: MyFirstFlex): JSX.Element {
+  return (
+    <Flex
+      flexDirection={direction === "col" ? DIRECTION_COLUMN : DIRECTION_ROW}
+      gridGap="1rem"
+    >
+      <Box width="10rem" height="10rem" backgroundColor="#ff00ff" />
+      <Box width="10rem" height="10rem" backgroundColor="#0000ff" />
+      <Box width="10rem" height="10rem" backgroundColor="#ff0000" />
+    </Flex>
+  );
+}
+```
+
+`codesandbox`
+https://codesandbox.io/p/sandbox/shintarou-flex-5jdj4k
