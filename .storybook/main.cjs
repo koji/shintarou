@@ -14,4 +14,5 @@ module.exports = {
   docs: {
     autodocs: true,
   },
+  typescript: { reactDocgen: false },
 }

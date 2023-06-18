@@ -13,9 +13,11 @@
     "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
     "cz": "git-cz",
     "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "test": "vitest",
     "testrun": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "chromatic": "npx chromatic --project-token=chpt_48fb5798dad681c"
   },
   "engines": {
     "node": "^16.9.0 || ^17 || ^18"
@@ -89,10 +91,14 @@
     "grid",
     "layout"
   ],
-  "author": "koji",
+  "author": {
+    "name": "koji"
+  },
   "bugs": {
     "url": "https://github.com/koji/shintarou/issues"
   },
   "homepage": "https://github.com/koji/shintarou",
-  "license": "MIT"
+  "license": "MIT",
+  "readme": "ERROR: No README data found!",
+  "_id": "shintarou@0.0.3"
 }
