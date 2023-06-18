@@ -1,6 +1,10 @@
 # shintarou/新太郎
 shintarou/新太郎 is an npm package to make building web layout easy. This lib has 3 components to create a web ui for reactjs app.
+shintarou is easy to install and to use. 
 
+## requirements
+- nodejs: v16.9 - v18
+- package manager: npm/yarn/pnpm
 ## How to install
 
 ```shell
