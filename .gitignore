@@ -27,3 +27,5 @@ dist-ssr
 changelog.config.js
 
 types
+
+/storybook-static
