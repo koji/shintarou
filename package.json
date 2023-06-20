@@ -21,7 +21,7 @@
     "deploy": "gh-pages -d storybook-static"
   },
   "engines": {
-    "node": "^16.9.0 || ^17 || ^18"
+    "node": ">=16.9.0"
   },
   "dependencies": {
     "lodash": "^4.17.21",
