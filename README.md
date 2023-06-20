@@ -43,7 +43,7 @@ https://codesandbox.io/p/sandbox/shintarou-box-8s737k
 
 
 ### Flex
-`Flex` is `div` with flex box.
+`Flex` is `div` with `flex box`.
 
 ```ts
 import { Box, DIRECTION_COLUMN, DIRECTION_ROW, Flex } from "shintarou";
@@ -68,3 +68,44 @@ export function MyFirstFlex({ direction }: MyFirstFlex): JSX.Element {
 
 `codesandbox`  
 https://codesandbox.io/p/sandbox/shintarou-flex-5jdj4k
+
+
+### Grid
+`Grid` is `div` with `grid`.
+
+
+```ts
+import { Box, Grid } from "shintarou";
+
+export function MyFirstGrid(): JSX.Element {
+  return (
+    <Grid
+      gridTemplateColumns="auto auto auto"
+      padding="1rem"
+      color="black"
+      gridGap="1rem"
+    >
+      <Box width="10rem" height="10rem" backgroundColor="#ff00ff">
+        1
+      </Box>
+      <Box width="10rem" height="10rem" backgroundColor="#0650ff">
+        2
+      </Box>
+      <Box width="10rem" height="10rem" backgroundColor="#af030a">
+        3
+      </Box>
+      <Box width="10rem" height="10rem" backgroundColor="#ffaaff">
+        4
+      </Box>
+      <Box width="10rem" height="10rem" backgroundColor="#0000ff">
+        5
+      </Box>
+      <Box width="10rem" height="10rem" backgroundColor="#dadada">
+        6
+      </Box>
+    </Grid>
+  );
+}
+```
+`codesandbox`  
+https://codesandbox.io/p/sandbox/shintarou-grid-v85pny
