@@ -20,6 +20,37 @@ pnpm add shintarou
 
 
 ## How to use shintarou/新太郎
+
+### css from styled-components
+
+```ts
+import { css } from 'styled-components'
+
+import { Box } from 'shintarou'
+
+const MY_BOX_STYLE = css`
+  width: 20rem;
+  height: 20rem;
+  background-color: #ff00ff;
+  &:hover {
+    background-color: #000;
+  }
+`
+
+interface MyFirstBoxProps {
+  title: string
+  backgroundColor: string
+}
+
+export function MyFirstBox({ title, backgroundColor}: MyFirstBoxProps): JSX.Element {
+  return (
+    <Box css={MY_BOX_STYLE}>{title}</Box>
+  )
+}
+
+
+```
+
 ### Box
 `Box` is the same as `div` but you don't need to use `style={{css}}` for styling a div. You can pass backgroundColor, width, height etc as props.
 
