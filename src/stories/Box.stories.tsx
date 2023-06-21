@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { css } from 'styled-components'
-import { Box as BoxComponent } from '../lib/Box'
+import { Box as BoxComponent } from '../Box'
 
 import type { Story, Meta } from '@storybook/react'
 

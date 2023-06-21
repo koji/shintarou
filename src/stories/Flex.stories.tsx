@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { Flex as FlexComponent } from '../lib/Flex'
-import { Box } from '../lib/Box'
-import { DIRECTION_COLUMN, JUSTIFY_SPACE_AROUND } from '../lib/styles'
+import { Flex as FlexComponent } from '../Flex'
+import { Box } from '../Box'
+import { DIRECTION_COLUMN, JUSTIFY_SPACE_AROUND } from '../styles'
 
 import type { Story, Meta } from '@storybook/react'
 
