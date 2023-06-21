@@ -1,7 +1,7 @@
 {
   "name": "shintarou",
   "private": false,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "type": "module",
   "description": "shintarou/新太郎 is a react component that helps to create a layout easily. It supports normal div, flexbox and grid.",
   "scripts": {
@@ -57,6 +57,7 @@
     "storybook": "6.5.16",
     "typescript": "^5.0.4",
     "vite": "^4.1.0",
+    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-dts": "^2.0.2",
     "vitest": "^0.32.0"
   },
