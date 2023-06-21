@@ -16,9 +16,7 @@
     "build-storybook": "build-storybook -o docs-build",
     "test": "vitest",
     "testrun": "vitest run",
-    "coverage": "vitest run --coverage",
-    "predeploy": "build-storybook",
-    "deploy": "gh-pages -d storybook-static"
+    "coverage": "vitest run --coverage"
   },
   "engines": {
     "node": ">=16.9.0"
@@ -54,7 +52,6 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-testing-library": "^5.11.0",
-    "gh-pages": "^5.0.0",
     "git-cz": "^4.9.0",
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
