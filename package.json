@@ -13,7 +13,7 @@
     "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
     "cz": "git-cz",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -o docs",
+    "build-storybook": "build-storybook -o docs-build",
     "test": "vitest",
     "testrun": "vitest run",
     "coverage": "vitest run --coverage"
