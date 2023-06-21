@@ -5,7 +5,7 @@ import { styleProps, isntStyleProp } from '../style-props'
 import type { PrimitiveComponent } from '../types'
 
 /**
- * Grid primitive
+ * Grid
  *
  * @component
  */
