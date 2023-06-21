@@ -93,7 +93,5 @@
     "url": "https://github.com/koji/shintarou/issues"
   },
   "homepage": "https://github.com/koji/shintarou",
-  "license": "MIT",
-  "readme": "ERROR: No README data found!",
-  "_id": "shintarou@0.0.3"
+  "license": "MIT"
 }
