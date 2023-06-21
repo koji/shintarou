@@ -15,6 +15,7 @@ describe('Box', async () => {
     expect(flex).toHaveStyle(`flex-direction: ${DIRECTION_COLUMN}`)
     expect(flex.innerHTML).toEqual('test')
   })
+
   it('should render flex component with props row case', () => {
     render(
       <Flex backgroundColor="#fff000" padding="1rem 2rem" flexDirection={DIRECTION_ROW}>
