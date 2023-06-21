@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.6",
   "type": "module",
-  "description": "shintarou is a react component that helps to create a layout easily. It supports normal div, flexbox and grid.",
+  "description": "shintarou/新太郎 is a react component that helps to create a layout easily. It supports normal div, flexbox and grid.",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -13,7 +13,7 @@
     "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
     "cz": "git-cz",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -o docs-build",
+    "build-storybook": "build-storybook -o docs",
     "test": "vitest",
     "testrun": "vitest run",
     "coverage": "vitest run --coverage"
