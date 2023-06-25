@@ -98,6 +98,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Opentrons/opentrons.git"
+    "url": "git+https://github.com/koji/shintarou"
   }
 }
