@@ -1,7 +1,7 @@
 {
   "name": "shintarou",
   "private": false,
-  "version": "0.0.15",
+  "version": "0.0.28",
   "type": "module",
   "description": "shintarou/新太郎 is a react component that helps to create a layout easily. It supports normal div, flexbox and grid.",
   "scripts": {
@@ -44,6 +44,7 @@
     "@typescript-eslint/parser": "^5.52.0",
     "@vitejs/plugin-react": "^4.0.0",
     "babel-loader": "^9.0.0",
+    "babel-plugin-styled-components": "^2.1.4",
     "eslint": "^8.34.0",
     "eslint-plugin-jest-dom": "^5.0.0",
     "eslint-plugin-react": "^7.32.2",
@@ -88,11 +89,15 @@
     "layout"
   ],
   "author": {
-    "name": "koji"
+    "name": "koji kanao"
   },
   "bugs": {
     "url": "https://github.com/koji/shintarou/issues"
   },
   "homepage": "https://github.com/koji/shintarou",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Opentrons/opentrons.git"
+  }
 }
