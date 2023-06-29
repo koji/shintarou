@@ -4,25 +4,28 @@ import path from 'node:path'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import viteCompression from 'vite-plugin-compression'
-import macrosPlugin from 'vite-plugin-babel-macros'
 
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      babel: {
+        plugins: [
+          [
+            'babel-plugin-styled-components',
+            {
+              ssr: false,
+              pure: true,
+              displayName: true,
+              fileName: false,
+            },
+          ],
+        ],
+      },
+    }),
     dts({
       insertTypesEntry: true,
     }),
     viteCompression(),
-    macrosPlugin(),
-    // [
-    //   'babel-plugin-styled-components',
-    //   {
-    //     ssr: false,
-    //     pure: true,
-    //     displayName: true,
-    //     fileName: false,
-    //   },
-    // ],
   ],
   build: {
     lib: {
