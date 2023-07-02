@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'node:path'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
-import viteCompression from 'vite-plugin-compression'
+import { compression } from 'vite-plugin-compression2'
 
 export default defineConfig({
   plugins: [
@@ -25,7 +25,7 @@ export default defineConfig({
     dts({
       insertTypesEntry: true,
     }),
-    viteCompression(),
+    compression({ algorithm: 'gzip' }),
   ],
   build: {
     lib: {
