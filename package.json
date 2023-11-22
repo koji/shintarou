@@ -64,7 +64,7 @@
     "vite-plugin-babel-macros": "^1.0.6",
     "vite-plugin-compression2": "^0.10.6",
     "vite-plugin-dts": "^2.3.0",
-    "vitest": "^0.32.4"
+    "vitest": "^0.34.0"
   },
   "peerDependencies": {
     "lodash": "^4.17.0",
