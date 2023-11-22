@@ -18,7 +18,7 @@
     "clean": "shx rm -rf dist types"
   },
   "engines": {
-    "node": ">=16.9.0"
+    "node": ">=18.16.1"
   },
   "dependencies": {
     "lodash": "^4.17.21",
