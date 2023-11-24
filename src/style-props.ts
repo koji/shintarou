@@ -186,5 +186,6 @@ export const styleProps = (props: Types.StyleProps): CSSObject => ({
   ...transitionStyles(props),
 })
 
-export const isntStyleProp = (prop: string | React.ReactText): boolean =>
-  !STYLE_PROPS.includes(prop as any)
+type ReactText = string | number
+export const isntStyleProp = (prop: string | ReactText): boolean =>
+  !STYLE_PROPS.includes(prop as any) && prop !== 'css'
