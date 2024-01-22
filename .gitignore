@@ -31,3 +31,6 @@ types
 /storybook-static
 coverage/coverage-final.json
 coverage/coverage-summary.json
+coverage/.tmp/coverage-1.json
+coverage/.tmp/coverage-0.json
+coverage/.tmp/coverage-2.json
