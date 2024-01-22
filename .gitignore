@@ -29,3 +29,5 @@ changelog.config.js
 types
 
 /storybook-static
+coverage/coverage-final.json
+coverage/coverage-summary.json
