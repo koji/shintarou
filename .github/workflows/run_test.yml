@@ -12,6 +12,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      # Required to checkout the code
+      contents: read
+      # Required to put a comment into the pull-request
+      pull-requests: write
+
     steps:
     - uses: actions/checkout@v4
 
@@ -26,8 +32,8 @@ jobs:
     - name: Install dependencies
       run: pnpm install
 
-    - name: Run Vitest(test) with coverage 
-      run: pnpm run coverage
+    - name: Run Vitest(test) with coverage
+      run: pnpm run coverage --coverage.reporter=json-summary
     - name: 'Report Coverage'
       # Set if: always() to also generate the report if tests are failing
       # Only works if you set `reportOnFailure: true` in your vite config as specified above
