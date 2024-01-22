@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Use Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: '18'
     
@@ -24,7 +24,7 @@ jobs:
       run: corepack enable
 
     - name: Install dependencies
-      run: pnpm ci
+      run: pnpm install
 
     - name: Run Vitest(test)
       run: pnpm run test
