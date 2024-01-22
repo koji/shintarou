@@ -19,12 +19,17 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-    
+
     - name: Enable corepack
       run: corepack enable
 
     - name: Install dependencies
       run: pnpm install
 
-    - name: Run Vitest(test)
-      run: pnpm run test
+    - name: Run Vitest(test) with coverage 
+      run: pnpm run coverage
+    - name: 'Report Coverage'
+      # Set if: always() to also generate the report if tests are failing
+      # Only works if you set `reportOnFailure: true` in your vite config as specified above
+      if: always() 
+      uses:  davelosert/vitest-coverage-report-action@v2
