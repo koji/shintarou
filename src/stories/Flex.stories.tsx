@@ -1,18 +1,19 @@
 import * as React from 'react'
-import { Flex as FlexComponent } from '../Flex'
-import { Box } from '../Box'
-import { DIRECTION_COLUMN, JUSTIFY_SPACE_AROUND } from '../styles'
+import { Flex as FlexComponent } from '../Flex/index.tsx'
+import { Box } from '../Box/index.tsx'
+import { DIRECTION_COLUMN, JUSTIFY_SPACE_AROUND } from '../styles/index.ts'
 
-import type { Story, Meta } from '@storybook/react'
+import type { Story } from '@storybook/react'
 
 export default {
   title: 'shintarou/Flex',
-} as Meta
+}
 
 const Template: Story<React.ComponentProps<typeof FlexComponent>> = (args) => (
   <FlexComponent {...args} />
 )
-export const Flex = Template.bind({})
+// export const Flex = Template.bind({})
+export const Flex: Story<React.ComponentProps<typeof Template>> = Template.bind({})
 Flex.args = {
   children: [
     <Box key="1" backgroundColor="red">

@@ -47,9 +47,9 @@ export default defineConfig({
     },
   },
   test: {
-    globals: true,
     environment: 'jsdom',
     include: ['src/**/*.test.{js,ts,jsx,tsx}'],
+    globals: true,
     setupFiles: './vitest.setup.ts',
     coverage: {
       provider: 'v8',
@@ -59,8 +59,8 @@ export default defineConfig({
         lines: 50,
         branches: 50,
         functions: 50,
-        statements: 50
-      }
-    }
+        statements: 50,
+      },
+    },
   },
 })

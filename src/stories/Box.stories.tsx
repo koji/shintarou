@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { css } from 'styled-components'
-import { Box as BoxComponent } from '../Box'
+import { Box as BoxComponent } from '../Box/index.tsx'
 
-import type { Story, Meta } from '@storybook/react'
+import type { Story } from '@storybook/react'
 
 const BOX_STYLE = css`
   &:hover {
@@ -12,12 +12,14 @@ const BOX_STYLE = css`
 
 export default {
   title: 'shintarou/Box',
-} as Meta
+}
 
 const Template: Story<React.ComponentProps<typeof BoxComponent>> = (args) => (
   <BoxComponent {...args} css={BOX_STYLE} />
 )
-export const Box = Template.bind({})
+// export const Box = Template.bind({})
+export const Box: Story<React.ComponentProps<typeof Template>> = Template.bind({})
+
 Box.args = {
   children: 'This is a simple Box component.',
   backgroundColor: 'blue',

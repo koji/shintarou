@@ -1,7 +1,7 @@
-export * from './Box'
-export * from './Flex'
-export * from './Grid'
+export * from './Box/index.tsx'
+export * from './Flex/index.tsx'
+export * from './Grid/index.tsx'
 
-export * from './types'
-export * from './styles'
-export * from './style-props'
+export * from './types.ts'
+export * from './styles/index.ts'
+export * from './style-props.ts'
