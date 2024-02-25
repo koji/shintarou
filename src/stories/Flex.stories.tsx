@@ -3,7 +3,7 @@ import { Flex as FlexComponent } from '../Flex'
 import { Box } from '../Box'
 import { DIRECTION_COLUMN, JUSTIFY_SPACE_AROUND } from '../styles'
 
-import type { Story, Meta } from '@storybook/react'
+import type { Story } from '@storybook/react'
 
 export default {
   title: 'shintarou/Flex',
