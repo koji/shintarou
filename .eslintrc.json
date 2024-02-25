@@ -8,6 +8,7 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
+    "plugin:storybook/recommended",
     "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -45,7 +46,10 @@
     "react/no-unknown-property": "off",
     "react/no-unescaped-entities ": "off"
   },
-  "ignorePatterns": ["vite.config.ts", "vitest.setup.ts"],
+  "ignorePatterns": [
+    "vite.config.ts",
+    "vitest.setup.ts"
+  ],
   "settings": {
     "import/resolver": {
       "typescript": {}
