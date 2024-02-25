@@ -1,0 +1,12 @@
+export declare const GRID_AUGRID_INHERITTO = "auto";
+export declare const GRID_MIN_CONTENT = "min-content";
+export declare const GRID_MAX_CONTENT = "max-content";
+export declare const GRID_NONE = "none";
+export declare const GRID_INHERIT = "inherit";
+export declare const GRID_INITIAL = "initial";
+export declare const GRID_REVERT = "revert";
+export declare const GRID_REVERT_LAYER = "revert-layer";
+export declare const GRID_UNSET = "unset";
+export declare const GRID_SUBGRID = "subgrid";
+export declare const GRID_MASONRY = "masonry";
+//# sourceMappingURL=grid.d.ts.map
