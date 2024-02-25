@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "moduleResolution": "node",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
@@ -10,7 +9,8 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "emitDeclarationOnly": true,
@@ -18,8 +18,17 @@
     "declarationMap": true,
     "declarationDir": "./types",
     "jsx": "react-jsx",
-    "types": ["vitest/globals"]
+    "typeRoots": ["node_modules/@types"]
   },
-  "include": ["typings", "src", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "typings",
+    "src",
+    "**/*.ts",
+    "**/*.tsx",
+    "vite.config.ts",
+    "src/vite-env.d.ts",
+    "styled-components.d.ts",
+    "vitest.setup.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

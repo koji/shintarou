@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react'
-import { Flex } from '../index'
+import { describe, expect, it } from 'vitest'
+import { Flex } from '../'
 import { DIRECTION_COLUMN, DIRECTION_ROW } from '../../styles'
 
 describe('Box', async () => {
