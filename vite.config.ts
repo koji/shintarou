@@ -1,9 +1,9 @@
-/// <reference types="vitest" />
 import react from '@vitejs/plugin-react'
 import path from 'node:path'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import { compression } from 'vite-plugin-compression2'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
   plugins: [
@@ -22,6 +22,7 @@ export default defineConfig({
         ],
       },
     }),
+    tsconfigPaths(),
     dts({
       insertTypesEntry: true,
     }),
@@ -43,23 +44,6 @@ export default defineConfig({
           'styled-components': 'styled',
           lodash: 'lodash',
         },
-      },
-    },
-  },
-  test: {
-    environment: 'jsdom',
-    include: ['src/**/*.test.{js,ts,jsx,tsx}'],
-    globals: true,
-    setupFiles: './vitest.setup.ts',
-    coverage: {
-      provider: 'v8',
-      reporter: ['text', 'json-summary', 'json'],
-      reportOnFailure: true,
-      thresholds: {
-        lines: 50,
-        branches: 50,
-        functions: 50,
-        statements: 50,
       },
     },
   },

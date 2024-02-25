@@ -1,5 +1,5 @@
 import pick from 'lodash/pick'
-import * as Types from './types.ts'
+import * as Types from './types'
 
 import type { CSSObject } from 'styled-components'
 

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "composite": true,
     "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true
   },
   "include": ["vite.config.ts"]

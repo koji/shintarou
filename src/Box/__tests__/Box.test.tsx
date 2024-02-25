@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react'
-import { Box } from '../index'
+import { describe, expect, it } from 'vitest'
+import { Box } from '../'
 
 describe('Box', async () => {
   it('should render box component with props', async () => {

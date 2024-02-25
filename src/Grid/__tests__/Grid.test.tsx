@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react'
-import { Grid } from '../index'
+import { describe, expect, it } from 'vitest'
+import { Grid } from '../'
 
 describe('Grid', async () => {
   it('should render box component with props', () => {
