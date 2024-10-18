@@ -25,7 +25,7 @@
     "src",
     "**/*.ts",
     "**/*.tsx",
-    "vite.config.ts",
+    "vite.config.mts",
     "src/vite-env.d.ts",
     "styled-components.d.ts",
     "vitest.setup.ts"
