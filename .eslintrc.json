@@ -45,10 +45,7 @@
     "react/no-unknown-property": "off",
     "react/no-unescaped-entities ": "off"
   },
-  "ignorePatterns": [
-    "vite.config.ts",
-    "vitest.setup.ts"
-  ],
+  "ignorePatterns": ["vite.config.mts", "vitest.setup.ts"],
   "settings": {
     "import/resolver": {
       "typescript": {}
