@@ -4,14 +4,15 @@ import { Box } from '../Box'
 import { DIRECTION_COLUMN, JUSTIFY_SPACE_AROUND } from '../styles'
 
 import type { Story } from '@storybook/react'
-import type { ComponentProps } from 'react'
 
 export default {
   title: 'shintarou/Flex',
 }
 
-const Template: Story<ComponentProps<typeof FlexComponent>> = (args) => <FlexComponent {...args} />
-export const Flex: Story<ComponentProps<typeof Template>> = Template.bind({})
+const Template: Story<React.ComponentProps<typeof FlexComponent>> = (args) => (
+  <FlexComponent {...args} />
+)
+export const Flex: Story<React.ComponentProps<typeof Template>> = Template.bind({})
 Flex.args = {
   children: [
     <Box key="1" backgroundColor="red">
