@@ -51,7 +51,7 @@ devDependencies:
     version: 14.3.1(react-dom@18.3.1)(react@18.3.1)
   '@types/lodash':
     specifier: ^4.17.10
-    version: 4.17.10
+    version: 4.17.11
   '@types/react':
     specifier: ^18.3.11
     version: 18.3.11
@@ -3205,7 +3205,7 @@ packages:
       '@storybook/preview-api': 7.6.20
       '@storybook/theming': 7.6.20(react-dom@18.3.1)(react@18.3.1)
       '@storybook/types': 7.6.20
-      '@types/lodash': 4.17.10
+      '@types/lodash': 4.17.11
       color-convert: 2.0.1
       dequal: 2.0.3
       lodash: 4.17.21
@@ -4056,8 +4056,8 @@ packages:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
     dev: true
 
-  /@types/lodash@4.17.10:
-    resolution: {integrity: sha512-YpS0zzoduEhuOWjAotS6A5AVCva7X4lVlYLF0FYHAY9sdraBfnatttHItlWeZdGhuEkf+OzMNg2ZYAx8t+52uQ==}
+  /@types/lodash@4.17.11:
+    resolution: {integrity: sha512-jzqWo/uQP/iqeGGTjhgFp2yaCrCYTauASQcpdzESNCkHjSprBJVcZP9KG9aQ0q+xcsXiKd/iuw/4dLjS3Odc7Q==}
     dev: true
 
   /@types/mdx@2.0.13:
