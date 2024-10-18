@@ -2,7 +2,7 @@ name: Run Vitest
 
 on:
   push:
-    branches: [ '**' ]
+    branches: ['**']
   # push:
   #   branches: [ main ]
   # pull_request:
@@ -19,23 +19,23 @@ jobs:
       pull-requests: write
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
 
-    - name: Enable corepack
-      run: corepack enable
+      - name: Enable corepack
+        run: corepack enable
 
-    - name: Install dependencies
-      run: pnpm install
+      - name: Install dependencies
+        run: pnpm install
 
-    - name: Run Vitest(test) with coverage
-      run: pnpm run coverage
-    - name: 'Report Coverage'
-      # Set if: always() to also generate the report if tests are failing
-      # Only works if you set `reportOnFailure: true` in your vite config as specified above
-      if: always()
-      uses:  davelosert/vitest-coverage-report-action@v2
+      - name: Run Vitest(test) with coverage
+        run: pnpm run coverage
+      - name: 'Report Coverage'
+        # Set if: always() to also generate the report if tests are failing
+        # Only works if you set `reportOnFailure: true` in your vite config as specified above
+        if: always()
+        uses: davelosert/vitest-coverage-report-action@v2

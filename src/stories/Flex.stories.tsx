@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Flex as FlexComponent } from '../Flex'
 import { Box } from '../Box'
 import { DIRECTION_COLUMN, JUSTIFY_SPACE_AROUND } from '../styles'
