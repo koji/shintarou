@@ -30,5 +30,6 @@
     "styled-components.d.ts",
     "vitest.setup.ts"
   ],
+  "exclude": ["node_modules", "**/*.stories.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
