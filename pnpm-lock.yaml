@@ -106,8 +106,8 @@ importers:
         specifier: ^12.1.1
         version: 12.1.1(eslint@9.17.0)
       eslint-plugin-storybook:
-        specifier: ^0.8.0
-        version: 0.8.0(eslint@9.17.0)(typescript@5.7.2)
+        specifier: ^0.12.0
+        version: 0.12.0(eslint@9.17.0)(typescript@5.7.2)
       eslint-plugin-testing-library:
         specifier: ^6.5.0
         version: 6.5.0(eslint@9.17.0)(typescript@5.7.2)
@@ -1868,9 +1868,6 @@ packages:
   '@storybook/csf-tools@7.6.20':
     resolution: {integrity: sha512-rwcwzCsAYh/m/WYcxBiEtLpIW5OH1ingxNdF/rK9mtGWhJxXRDV8acPkFrF8rtFWIVKoOCXu5USJYmc3f2gdYQ==}
 
-  '@storybook/csf@0.0.1':
-    resolution: {integrity: sha512-USTLkZze5gkel8MYCujSRBVIrUQ3YPBrLOx7GNk/0wttvVtlzWXAq9eLbQ4p/NicGxP+3T7KPEMVV//g+yubpw==}
-
   '@storybook/csf@0.0.2--canary.4566f4d.1':
     resolution: {integrity: sha512-9OVvMVh3t9znYZwb0Svf/YQoxX2gVOeQTGe2bses2yj+a3+OJnCrUF3/hGv6Em7KujtOdL2LL+JnG49oMVGFgQ==}
 
@@ -3214,11 +3211,11 @@ packages:
     peerDependencies:
       eslint: '>=5.0.0'
 
-  eslint-plugin-storybook@0.8.0:
-    resolution: {integrity: sha512-CZeVO5EzmPY7qghO2t64oaFM+8FTaD4uzOEjHKp516exyTKo+skKAL9GI3QALS2BXhyALJjNtwbmr1XinGE8bA==}
+  eslint-plugin-storybook@0.12.0:
+    resolution: {integrity: sha512-Lg5I0+npTgiYgZ4KSvGWGDFZi3eOCNJPaWX0c9rTEEXC5wvooOClsP9ZtbI4hhFKyKgYR877KiJxbRTSJq9gWA==}
     engines: {node: '>= 18'}
     peerDependencies:
-      eslint: '>=6'
+      eslint: '>=8'
 
   eslint-plugin-testing-library@6.5.0:
     resolution: {integrity: sha512-Ls5TUfLm5/snocMAOlofSOJxNN0aKqwTlco7CrNtMjkTdQlkpSMaeTCDHCuXfzrI97xcx2rSCNeKeJjtpkNC1w==}
@@ -4096,9 +4093,11 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.isequal@4.5.0:
     resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    deprecated: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
@@ -7856,10 +7855,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@storybook/csf@0.0.1':
-    dependencies:
-      lodash: 4.17.21
-
   '@storybook/csf@0.0.2--canary.4566f4d.1':
     dependencies:
       lodash: 4.17.21
@@ -9678,12 +9673,11 @@ snapshots:
     dependencies:
       eslint: 9.17.0
 
-  eslint-plugin-storybook@0.8.0(eslint@9.17.0)(typescript@5.7.2):
+  eslint-plugin-storybook@0.12.0(eslint@9.17.0)(typescript@5.7.2):
     dependencies:
-      '@storybook/csf': 0.0.1
-      '@typescript-eslint/utils': 5.62.0(eslint@9.17.0)(typescript@5.7.2)
+      '@storybook/csf': 0.1.12
+      '@typescript-eslint/utils': 8.18.1(eslint@9.17.0)(typescript@5.7.2)
       eslint: 9.17.0
-      requireindex: 1.2.0
       ts-dedent: 2.2.0
     transitivePeerDependencies:
       - supports-color
